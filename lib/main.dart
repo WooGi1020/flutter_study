@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_study/screens/home_screen.dart';
+// import 'package:flutter_study/screens/home_screen_for_study.dart';
 // import 'package:flutter_study/widgets/button.dart';
 // import 'package:flutter_study/widgets/card.dart';
 
@@ -8,22 +9,34 @@ void main() {
 }
 
 class App extends StatelessWidget {
+  // StatelessWidget 부모 클래스에 key 전달
   const App({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        theme: ThemeData(
-          scaffoldBackgroundColor: Color(0xFFE7626C),
-          textTheme: TextTheme(
-              headlineLarge: TextStyle(
-            color: Color(0xFF232B55),
-          )),
-          cardColor: Color(0xFFF4EDDB),
-        ),
-        home: HomeScreen());
+      home: HomeScreen(),
+    );
   }
 }
+
+// class App extends StatelessWidget {
+//   const App({super.key});
+
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//         theme: ThemeData(
+//           scaffoldBackgroundColor: Color(0xFFE7626C),
+//           textTheme: TextTheme(
+//               headlineLarge: TextStyle(
+//             color: Color(0xFF232B55),
+//           )),
+//           cardColor: Color(0xFFF4EDDB),
+//         ),
+//         home: HomeScreen());
+//   }
+// }
 
 // context를 이용한 부모 요소 접근
 // class MyLageTitle extends StatefulWidget {
